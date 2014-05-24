@@ -41,7 +41,7 @@ window[ns].prototype = {
 
     if( this.globalIndex != 0 ) return;
 
-    $.getScript( '/2013/javascripts/hero-' + this.type + '.js', function(data, textStatus, jqxhr) {
+    $.getScript( '/2014/javascripts/hero-' + this.type + '.js', function(data, textStatus, jqxhr) {
       var i = site.callbacks[this.type].length;
       while( i-- ) site.callbacks[this.type][i]();
     }.bind(this));

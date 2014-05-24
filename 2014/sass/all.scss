@@ -21,7 +21,7 @@ body {
 @import "susy";
 
 @import "normalize";
-@include normalize;
+//@include normalize;
 @include establish-baseline;
 
 @import "layout";

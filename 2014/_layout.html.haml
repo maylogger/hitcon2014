@@ -1,0 +1,44 @@
+!!! 5
+%html{ :lang => "zh-TW" }
+
+  %head
+
+    %meta{ :charset => "utf-8" }
+    %title= data["site-title"]
+
+    = render "/2014/partials/favicon"
+    = render "/2014/partials/viewport"
+    = render "/2014/partials/fb-og"
+
+    = render "/2014/partials/site-css"
+    = render "/2014/vender/html5shim"
+
+    = render "/2014/kmt.erb"
+
+  %body
+    = yield :hero
+    .page
+      %nav.main-menu
+        %h2.title Main Navigation
+        %ul
+          %li.menu-item= link_to( "Home", "/" )
+          %li.menu-item= link_to( "News", "http://blog.hitcon.org/" )
+          %li.menu-item= link_to( "Agenda", "/2014/agenda/" )
+          %li.menu-item= link_to( "CTF", "/2014/CTF/" )
+          %li.menu-item= link_to( "Location", "/2014/location/" )
+          %li.menu-item= link_to( "Registration", "/2014/registration/" )
+          %li.menu-item= link_to( "Sponsor", "/2014/sponsor/" )
+      .main-content
+        .header
+          %a.menu-button
+            .line
+            .line
+            .line
+          %h1.title
+            = link_to "HITCON 2013", "/2014/"
+        = yield
+        = render "/2014/footer"
+    = render "/2014/vender/jquery-cdn"
+    = render "/2014/partials/site-js"
+    = render "/2014/vender/facebook.erb"
+    = livereload_js unless ENV["RACK_ENV"] == "production"
