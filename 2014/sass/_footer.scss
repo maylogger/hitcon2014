@@ -28,7 +28,7 @@
   }
   .slogan {
     margin: $base-line-height auto;
-    @include replace-text-with-svg("slogan");
+    @include replace-text-with-svg("slogan-2014");
     @include at-breakpoint($ipad) {
       width: 600px;
       height: 50px;

@@ -19,7 +19,7 @@
     hgroup {
       .title {
         background: black;
-        @include replace-text-with-svg("logo-large");
+        @include replace-text-with-svg("logo-2014");
         margin: 0 auto;
       }
       width: 600px - 2px;
@@ -52,7 +52,7 @@
     hgroup {
       .title {
         background: black;
-        @include replace-text-with-svg("logo-large");
+        @include replace-text-with-svg("logo-2014");
         margin: 0 auto;
       }
       width: 600px - 2px;
@@ -60,5 +60,5 @@
       overflow: hidden;
       margin: 0 auto;
     }
-  }  
+  }
 }
