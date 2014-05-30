@@ -2,10 +2,10 @@
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "2013/stylesheets"
-sass_dir = "2013/sass"
-images_dir = "2013/images"
-javascripts_dir = "2013/javascripts"
+css_dir = "2014/stylesheets"
+sass_dir = "2014/sass"
+images_dir = "2014/images"
+javascripts_dir = "2014/javascripts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -25,4 +25,4 @@ line_comments = false
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 preferred_syntax = :scss
 
-output_style = :expanded # by Fire.app 
+output_style = :expanded # by Fire.app
